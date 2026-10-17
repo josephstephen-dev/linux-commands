@@ -14,11 +14,12 @@
 **what it does (my words):** This is used to check the current amount of free disk space.
 
 **Example:**
-`df` displays: 
-** Filesystem		1k-blocks	    Used	 Available		Use%	Mounted on **
-** /dev/sdd       1055762868   2905560     999153836        1%    / **
-** rootfs            3030304      3396       3026908        1%    /init **
-** none              3035432         0       3035432        0%    /dev/shm **
+`df` displays:
+
+` Filesystem		1k-blocks	    Used	 Available		Use%	Mounted on `
+` /dev/sdd       1055762868   2905560     999153836        1%    / `
+` rootfs            3030304      3396       3026908        1%    /init `
+` none              3035432         0       3035432        0%    /dev/shm `
 
 ## free
 **what it does (my words):** Checks the amount of free space in the memory (RAM).
