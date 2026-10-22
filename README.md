@@ -185,3 +185,159 @@ Swap:        4194304           0     4194304
 | `[[:upper:]]*` | Any file starting with an uppercase letter |
 | `[![:digit:]]*` | Any file not starting with a number |
 | `*[[:lower:]123]` | Any file ending with a lowercase letter or the numbers 1, 2 or 3 |
+
+---
+
+## Command Discovery & Types
+
+### type
+**What it does (my words):** Prints the type of a command, e.g., executable programs, builtins, shell functions, or aliases.
+
+### which
+**What it does (my words):** Prints where a command script or program lives inside the system.
+
+### help
+**What it does (my words):** Displays helpful information about a command if it is a valid shell builtin.
+
+### man
+**What it does (my words):** Short for manual; used to get the complete arguments and manuals that can be used with a command.
+
+### apropos
+**What it does (my words):** Displays a list of appropriate commands matching a keyword description.
+
+### info
+**What it does (my words):** Displays an advanced, hyperlinked command info entry.
+
+### whatis
+**What it does (my words):** Close to man, but instead of showing the full manual page, it displays a single-line summary of what a command does.
+
+### alias
+**What it does (my words):** The magic word used to create custom shortcuts for long commands so you can run them with shorter words.
+
+---
+
+## Advanced Text Processing & Redirection
+
+### cat
+**What it does (my words):** Short for concatenation; it is used to write about anything, view files, or store text into an existing file.
+
+### sort
+**What it does (my words):** Used to arrange output data in a desired alphanumerical pattern.
+
+### uniq
+**What it does (my words):** Short for unique; used to remove duplicate lines sitting right next to each other in a file or stream.
+
+### grep
+**What it does (my words):** Used to print out words or lines that match a specified text pattern within a file.
+
+### wc
+**What it does (my words):** Word count; used to display the total number of lines, words, and byte counts of a specified file.
+
+### head
+**What it does (my words):** Used to display the first 10 lines of files within a directory by default unless a specific number is specified.
+
+### tail
+**What it does (my words):** Used to display the last 10 lines of files within a directory by default unless a specific number is specified.
+
+### tee
+**What it does (my words):** Does two things at the same time: copies the original stream data and stores it into a file while still sending it to the screen.
+
+### echo
+**What it does (my words):** Displays a given parameter or string back in many different patterns. Use man to check for more advanced flags.
+
+### clear
+**What it does (my words):** Clears the active terminal screen display.
+
+### history
+**What it does (my words):** Used to view past command history that has been saved in the command buffer.
+
+---
+
+## Users, Groups & Administration Permissions
+
+### id
+**What it does (my words):** Displays the IDs of users, groups, and others.
+
+### chmod
+**What it does (my words):** Changes file system permissions for users, groups, and others by the file owner or superuser.
+
+#### Permission Reference Chart
+
+| Octal | Binary | File Mode |
+|-------|--------|-----------|
+| **0** | 000    | `---`     |
+| **1** | 001    | `--x`     |
+| **2** | 010    | `-w-`     |
+| **3** | 011    | `-wx`     |
+| **4** | 100    | `r--`     |
+| **5** | 101    | `r-x`     |
+| **6** | 110    | `rw-`     |
+| **7** | 111    | `rwx`     |
+
+### umask
+**What it does (my words):** Used to set default permissions for a new file that will be created on the next prompt.
+
+### su
+**What it does (my words):** Substitute user; allows you to switch your terminal session identity to another user.
+
+### sudo
+**What it does (my words):** Substitute user and run for only the current command on a prompt, then return back to your normal user account.
+
+### chown
+**What it does (my words):** Changes who owns a file or directory for a specific user, group, or others.
+
+### usermod
+**What it does (my words):** Modifies an existing user account's properties and groups.
+
+### passwd
+**What it does (my words):** Changes or updates a user's password.
+
+---
+
+## Processes, Jobs & Signal Control
+
+### ps
+**What it does (my words):** Displays a quick snapshot of tasks and processes that are currently running.
+
+### top
+**What it does (my words):** Displays live, running tasks and system processes that dynamically update every 3 seconds.
+
+### jobs
+**What it does (my words):** Displays the active background processes that you created in the current shell session.
+
+### bg
+**What it does (my words):** Resumes a stopped process in the background and returns you to the prompt.
+
+### fg
+**What it does (my words):** Runs a process and brings the tasks running in the background forward onto the screen.
+
+### kill
+**What it does (my words):** Sends a specific control signal to terminate an individual running task.
+
+### killall
+**What it does (my words):** Sends a signal to terminate all running tasks of a specific program name at once.
+
+### nice
+**What it does (my words):** Lets you prioritize a task before it starts running.
+
+### renice
+**What it does (my words):** Reprioritizes the execution level of a process that is already running.
+
+### shutdown
+**What it does (my words):** Shuts down the system from the terminal with arguments to reboot, halt, and more.
+
+---
+
+## Advanced Keyboard Navigation Shortcuts
+
+| Shortcut | What it does |
+|----------|--------------|
+| `Ctrl+A` | Moves the cursor back to the beginning of the line |
+| `Ctrl+E` | Moves the cursor forward to the end of the line |
+| `Ctrl+T` | Exchanges the character on the cursor with the preceding character |
+| `Ctrl+U` | Kills all commands on the terminal line (deletes text as it copies them) |
+| `Ctrl+Y` | Yanks (pastes) the text back from the kill ring |
+| `Alt+T`  | Exchanges the word on the cursor with the next word preceding it |
+| `Alt+F`  | Moves the cursor forward one word |
+| `Alt+B`  | Moves the cursor backward one word |
+
